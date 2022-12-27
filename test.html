@@ -5,42 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </head>
 <body>
     <p>TEST</p>
-    <table>
+    <table class="table table-striped table-dark">
         <thead>
             <tr>
-                <th>학생이름</th>
-                <th>국어</th>
-                <th>영어</th>
-                <th>수학</th>
+                <th scope="col">학생이름</th>
+                <th scope="col">국어</th>
+                <th scope="col">영어</th>
+                <th scope="col">수학</th>
             </tr>   
         </thead>
         <tbody>
             <tr>
-                <td>박기수</td>
-                <td>100점</td>
-                <td>100점</td>
-                <td>100점</td>
+                <th scope="row">박기수</th>
+                <td id="kor1">100점</td>
+                <td id="eng1">100점</td>
+                <td id="mat1">100점</td>
             </tr>
             <tr>
-                <td>김다윤</td>
-                <td>10점</td>
-                <td>10점</td>
-                <td>10점</td>
+                <th scope="row">김다윤</th>
+                <td id="kor2">11점</td>
+                <td id="eng2">50점</td>
+                <td id="mat2">30점</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td>합계</td>
-                <td>110</td>
-                <td>110</td>
-                <td>110</td>
+                <th scope="row">합계</th>
+                <td id="first_g">110</td>
+                <td id="second_g">110</td>
+                <td id="third_g">110</td>
             </tr>
         </tfoot>
     </table>
+    <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-info" onclick="grade()">
+        성적확인
+      </button>
 
-    <button id="btn">성적확인</button>
 </body>
 </html>
